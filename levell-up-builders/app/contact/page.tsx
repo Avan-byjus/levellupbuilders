@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactForm from "./ContactForm";
 
 export default function ContactPage() {
   return (
@@ -32,7 +33,6 @@ export default function ContactPage() {
       <section className="contact-inquiry section-light">
         <div className="site-container">
           <div className="contact-grid">
-
             {/* LEFT */}
             <div className="contact-intro">
               <p className="eyebrow text-[#C58C67]">
@@ -66,117 +66,18 @@ export default function ContactPage() {
 
                 <div>
                   <span>Location</span>
-                  <p>No.3, 1st Floor,5thStreet,Tansi Nagar, 100ft.Taramani Link Road, Velachery, Chennai 600042.</p>
+                  <p>
+                    No.3, 1st Floor,5thStreet,Tansi Nagar, 100ft.Taramani Link
+                    Road, Velachery, Chennai 600042.
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* RIGHT — FORM */}
             <div className="contact-form-wrap">
-              <form className="contact-form">
-
-                <div className="contact-field">
-                  <label htmlFor="name">
-                    Name
-                  </label>
-
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div className="contact-field">
-                  <label htmlFor="email">
-                    Email Address
-                  </label>
-
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="you@example.com"
-                  />
-                </div>
-
-                <div className="contact-field">
-                  <label htmlFor="phone">
-                    Phone Number
-                  </label>
-
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="+91 XXXXX XXXXX"
-                  />
-                </div>
-
-                <div className="contact-field">
-                  <label htmlFor="project">
-                    Project Type
-                  </label>
-
-                  <select id="project" name="project" defaultValue="">
-                    <option value="" disabled>
-                      Select a project type
-                    </option>
-                    <option value="residential-construction">
-                      Residential Construction
-                    </option>
-                    <option value="interior-design">
-                      Interior Design
-                    </option>
-                    <option value="renovation">
-                      Renovation
-                    </option>
-                    <option value="turnkey">
-                      Turnkey Project
-                    </option>
-                    <option value="other">
-                      Other
-                    </option>
-                  </select>
-                </div>
-
-                <div className="contact-field">
-                  <label htmlFor="location">
-                    Project Location
-                  </label>
-
-                  <input
-                    id="location"
-                    name="location"
-                    type="text"
-                    placeholder="City / Location"
-                  />
-                </div>
-
-                <div className="contact-field contact-field-large">
-                  <label htmlFor="requirements">
-                    Project Requirements
-                  </label>
-
-                  <textarea
-                    id="requirements"
-                    name="requirements"
-                    placeholder="Tell us about your project..."
-                    rows={7}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="contact-submit"
-                >
-                  Submit Inquiry
-                </button>
-
-              </form>
+              <ContactForm />
             </div>
-
           </div>
         </div>
       </section>

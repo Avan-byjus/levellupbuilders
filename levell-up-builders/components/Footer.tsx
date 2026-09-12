@@ -20,7 +20,7 @@ export default function Footer() {
               {/* IMPORTANT: fixed-size wrapper */}
               <div className="relative h-16 w-16 shrink-0 overflow-hidden">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/Logo.png"
                   alt="Levell Up Builders"
                   fill
                   sizes="64px"
