@@ -46,6 +46,7 @@ export async function POST(request: Request) {
       );
     }
 
+    // 1. Send the inquiry to Levell Up Builders
     const { data, error } = await resend.emails.send({
       from: "Levell Up Builders <onboarding@resend.dev>",
       to: ["avantika.saras@gmail.com"],
@@ -66,11 +67,43 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      console.error("Resend error:", error);
+      console.error("Resend inquiry error:", error);
 
       return NextResponse.json(
         { error: "Unable to send inquiry." },
         { status: 500 }
+      );
+    }
+
+    // 2. Send an automatic confirmation to the person who submitted the form
+    const { error: confirmationError } = await resend.emails.send({
+      from: "Levell Up Builders <onboarding@resend.dev>",
+      to: [email],
+      subject: "Thank you for contacting Levell Up Builders",
+      html: `
+        <h2>Thank you, ${escapeHtml(name)}.</h2>
+
+        <p>
+          We have received your project inquiry and appreciate you
+          reaching out to Levell Up Builders.
+        </p>
+
+        <p>
+          Our team will review your requirements and get back to you
+          as soon as possible.
+        </p>
+
+        <p>
+          Best regards,<br />
+          Levell Up Builders
+        </p>
+      `,
+    });
+
+    if (confirmationError) {
+      console.error(
+        "Resend confirmation error:",
+        confirmationError
       );
     }
 
