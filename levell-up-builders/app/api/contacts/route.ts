@@ -48,19 +48,17 @@ export async function POST(request: Request) {
 
     // 1. Send the inquiry to Levell Up Builders
     const { data, error } = await resend.emails.send({
-      from: "Levell Up Builders <onboarding@resend.dev>",
-      to: ["avantika.saras@gmail.com"],
+      from: "Levell Up Builders <noreply@levellupbuilders.in>",
+      to: ["levellupbuilders@gmail.com"],
       replyTo: email,
       subject: `New Project Inquiry from ${name}`,
       html: `
         <h2>New Project Inquiry</h2>
-
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
         <p><strong>Project Type:</strong> ${escapeHtml(project)}</p>
         <p><strong>Project Location:</strong> ${escapeHtml(location)}</p>
-
         <h3>Project Requirements</h3>
         <p>${escapeHtml(requirements).replace(/\n/g, "<br />")}</p>
       `,
@@ -75,24 +73,21 @@ export async function POST(request: Request) {
       );
     }
 
-    // 2. Send an automatic confirmation to the person who submitted the form
+    // 2. Send an automatic confirmation to the visitor
     const { error: confirmationError } = await resend.emails.send({
-      from: "Levell Up Builders <onboarding@resend.dev>",
+      from: "Levell Up Builders <noreply@levellupbuilders.in>",
       to: [email],
       subject: "Thank you for contacting Levell Up Builders",
       html: `
         <h2>Thank you, ${escapeHtml(name)}.</h2>
-
         <p>
           We have received your project inquiry and appreciate you
           reaching out to Levell Up Builders.
         </p>
-
         <p>
           Our team will review your requirements and get back to you
           as soon as possible.
         </p>
-
         <p>
           Best regards,<br />
           Levell Up Builders
@@ -101,10 +96,7 @@ export async function POST(request: Request) {
     });
 
     if (confirmationError) {
-      console.error(
-        "Resend confirmation error:",
-        confirmationError
-      );
+      console.error("Resend confirmation error:", confirmationError);
     }
 
     return NextResponse.json(
