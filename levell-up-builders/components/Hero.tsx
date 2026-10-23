@@ -125,17 +125,17 @@ export default function Hero() {
 
               <Link
                 href="/our-story"
-                className="
-                  border border-white/30
-                  px-6 py-3.5
-                  text-[10px] font-medium uppercase
-                  tracking-[0.28em] text-white
-                  transition-all duration-300
-                  hover:border-white
-                  hover:bg-white
-                  hover:text-[#102B45]
-                  sm:px-8 sm:py-4
-                "
+              className="
+                border border-[#C58C67]
+                px-6 py-3.5
+                text-[10px] font-medium uppercase
+                tracking-[0.28em] text-white
+                transition-all duration-300
+                hover:border-[#C58C67]
+                hover:bg-[#C58C67]
+                hover:text-white
+                sm:px-8 sm:py-4
+              "
               >
                 Our Story
               </Link>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -30,22 +30,10 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      {/* FOUNDER */}
+      {/* FOUNDER — TEXT ONLY, CENTRED */}
       <section className="story-block section-light">
-        <div className="site-container story-grid">
-          
-          <div className="story-image overflow-hidden">
-
-        <Image
-            src="/images/owner.jpg"
-            alt="Founder of Levell Up Builders"
-            width={500}
-            height={600}
-            className="h-full w-full object-cover"
-          />
-        </div>
-
-          <div className="story-copy">
+        <div className="site-container">
+          <div className="story-copy mx-auto max-w-3xl text-center">
             <p className="eyebrow text-[#C58C67]">
               01 — The Founder
             </p>
@@ -75,19 +63,17 @@ export default function OurStoryPage() {
               building projects.
             </p>
 
-            <div className="story-signature">
+            <div className="story-signature mt-8">
               <strong>Founder: PETER DAMIN A</strong>
               <span>LEVELL UP BUILDERS</span>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* COMPANY */}
       <section className="story-block section-blue">
         <div className="site-container story-grid story-grid-company">
-
           <div className="story-copy">
             <p className="eyebrow text-[#C58C67]">
               02 — The Company
@@ -131,14 +117,12 @@ export default function OurStoryPage() {
               <small>Replace with project image</small>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* JOURNEY */}
       <section className="story-journey section-light">
         <div className="site-container">
-
           <div className="journey-heading">
             <p className="eyebrow text-[#C58C67]">
               The Journey
@@ -152,7 +136,6 @@ export default function OurStoryPage() {
           </div>
 
           <div className="journey-list">
-
             <div className="journey-item">
               <span>01</span>
 
@@ -220,7 +203,6 @@ export default function OurStoryPage() {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -228,7 +210,6 @@ export default function OurStoryPage() {
       {/* CLOSING */}
       <section className="story-closing section-dark">
         <div className="site-container">
-
           <p className="eyebrow text-[#C58C67]">
             The Next Chapter
           </p>
@@ -244,7 +225,6 @@ export default function OurStoryPage() {
             Levell Up Builders is taking the next step with the same
             attention to detail that has defined its journey so far.
           </p>
-
         </div>
       </section>
 
