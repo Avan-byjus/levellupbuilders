@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function Hero() {
@@ -37,50 +38,43 @@ export default function Hero() {
           "
         >
           {/* LEFT SIDE */}
-          <div className="max-w-[760px]">
-
+          <div className="max-w-[800px]">
             {/* GOLD SERVICE LINE */}
             <div
               className="
-                mb-7 flex flex-wrap items-center gap-x-5 gap-y-2
+                mb-8 flex flex-wrap items-center gap-x-5 gap-y-2
                 text-[9px] font-medium uppercase
-                tracking-[0.38em] text-[#C58C67]
-                sm:text-[10px] sm:tracking-[0.42em]
+                tracking-[0.28em] text-[#C58C67]
+                sm:text-[10px] sm:tracking-[0.34em]
               "
             >
               <span>Architecture</span>
-
               <span className="text-[#C58C67]/70">•</span>
-
               <span>Construction</span>
-
               <span className="text-[#C58C67]/70">•</span>
-
               <span>Interior Design</span>
-
               <span className="text-[#C58C67]/70">•</span>
-
               <span>Turnkey</span>
             </div>
 
             {/* MAIN HEADING */}
             <h1
               className="
-                max-w-[760px]
-                text-[clamp(3.5rem,7vw,6.8rem)]
-                leading-[0.88]
-                tracking-[-0.04em]
+                max-w-[700px]
+                text-[clamp(3rem,5.2vw,5.5rem)]
+                font-normal
+                leading-[1.02]
+                tracking-[-0.035em]
                 text-[#F5F2EA]
               "
               style={{
-                fontFamily: "var(--font-heading)",
+                fontFamily: "var(--font-heading-loaded), Georgia, serif",
+                fontWeight: 400,
               }}
             >
               Designed with
               <br />
-              Vision.
-              <br />
-              Built with
+              Vision. Built with
               <br />
               Precision.
             </h1>
@@ -88,12 +82,15 @@ export default function Hero() {
             {/* TAGLINE / DESCRIPTION */}
             <p
               className="
-                mt-9 max-w-[650px]
-                text-sm leading-7
-                text-white/75
-                sm:mt-10 sm:text-base sm:leading-8
-                lg:mt-11
+                mt-7 max-w-[620px]
+                text-[15px] font-normal leading-[1.8]
+                text-white/80
+                sm:mt-8 sm:text-base sm:leading-[1.8]
+                lg:mt-9
               "
+              style={{
+                fontFamily: "var(--font-body)",
+              }}
             >
               At LEVELL UP BUILDERS, we transform ideas into exceptional
               spaces through quality craftsmanship, thoughtful design, and
@@ -103,8 +100,8 @@ export default function Hero() {
             {/* CTA BUTTONS */}
             <div
               className="
-                mt-9 flex flex-wrap gap-3
-                sm:mt-10 sm:gap-4
+                mt-8 flex flex-wrap gap-3
+                sm:mt-9 sm:gap-4
               "
             >
               <Link
@@ -113,7 +110,7 @@ export default function Hero() {
                   border border-[#C58C67]
                   px-6 py-3.5
                   text-[10px] font-medium uppercase
-                  tracking-[0.28em] text-white
+                  tracking-[0.2em] text-white
                   transition-all duration-300
                   hover:bg-[#C58C67]
                   hover:text-white
@@ -125,17 +122,16 @@ export default function Hero() {
 
               <Link
                 href="/our-story"
-              className="
-                border border-[#C58C67]
-                px-6 py-3.5
-                text-[10px] font-medium uppercase
-                tracking-[0.28em] text-white
-                transition-all duration-300
-                hover:border-[#C58C67]
-                hover:bg-[#C58C67]
-                hover:text-white
-                sm:px-8 sm:py-4
-              "
+                className="
+                  border border-[#C58C67]
+                  px-6 py-3.5
+                  text-[10px] font-medium uppercase
+                  tracking-[0.2em] text-white
+                  transition-all duration-300
+                  hover:bg-[#C58C67]
+                  hover:text-white
+                  sm:px-8 sm:py-4
+                "
               >
                 Our Story
               </Link>
@@ -153,10 +149,7 @@ export default function Hero() {
             {/* YEARS */}
             <div className="text-right">
               <p
-                className="
-                  text-4xl text-[#C58C67]
-                  xl:text-5xl
-                "
+                className="text-4xl font-normal text-[#C58C67] xl:text-5xl"
                 style={{
                   fontFamily: "var(--font-heading)",
                 }}
@@ -167,9 +160,12 @@ export default function Hero() {
               <p
                 className="
                   mt-1 text-[9px]
-                  uppercase tracking-[0.35em]
+                  uppercase tracking-[0.28em]
                   text-white/60
                 "
+                style={{
+                  fontFamily: "var(--font-body)",
+                }}
               >
                 Years Experience
               </p>
@@ -187,10 +183,7 @@ export default function Hero() {
             {/* PROJECTS */}
             <div className="text-right">
               <p
-                className="
-                  text-4xl text-[#C58C67]
-                  xl:text-5xl
-                "
+                className="text-4xl font-normal text-[#C58C67] xl:text-5xl"
                 style={{
                   fontFamily: "var(--font-heading)",
                 }}
@@ -201,9 +194,12 @@ export default function Hero() {
               <p
                 className="
                   mt-1 text-[9px]
-                  uppercase tracking-[0.35em]
+                  uppercase tracking-[0.28em]
                   text-white/60
                 "
+                style={{
+                  fontFamily: "var(--font-body)",
+                }}
               >
                 Completed Projects
               </p>

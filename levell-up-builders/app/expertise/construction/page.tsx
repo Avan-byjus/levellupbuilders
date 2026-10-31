@@ -2,6 +2,33 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function ConstructionPage() {
+  const projects = [
+    {
+      number: "01",
+      category: "Residential Construction",
+      title: "Perambur Site",
+      description:
+        "Explore our Perambur construction project and its progress.",
+      href: "/projects/perambur-site",
+    },
+    {
+      number: "02",
+      category: "Residential Project",
+      title: "Residential Project",
+      description:
+        "Discover another residential project from Levell Up Builders.",
+      href: "/projects/corporate-office",
+    },
+    {
+      number: "03",
+      category: "Residential Project",
+      title: "Future Residence",
+      description:
+        "Explore our Future Residence project.",
+      href: "/projects/commercial-complex",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -71,8 +98,84 @@ export default function ConstructionPage() {
           </div>
         </section>
 
+        {/* SELECTED PROJECTS */}
+        <section className="section-light text-[#10243a]">
+          <div className="site-container border-t border-[#10243a]/10 py-24 sm:py-28 lg:py-32">
+            <div className="mb-14 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+              <div>
+                <p className="eyebrow text-[#C58C67]">
+                  Our Work
+                </p>
+
+                <h2
+                  className="mt-6 text-[3.2rem] leading-[0.98] sm:text-[4rem]"
+                  style={{ fontFamily: "var(--font-heading)" }}
+                >
+                  Selected Projects
+                </h2>
+              </div>
+
+              <p className="max-w-md text-[15px] leading-7 text-[#667586]">
+                Explore our residential projects and discover
+                the work behind each development.
+              </p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {projects.map((project) => (
+                <a
+                  key={project.number}
+                  href={project.href}
+                  className="group flex min-h-[260px] flex-col justify-between border border-[#10243a]/15 p-7 transition duration-300 hover:border-[#C58C67] hover:bg-[#10243a]"
+                >
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] tracking-[0.2em] text-[#C58C67]">
+                        {project.number}
+                      </span>
+
+                      <span className="text-xl text-[#C58C67] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                        ↗
+                      </span>
+                    </div>
+
+                    <p className="mt-10 text-[10px] font-medium uppercase tracking-[0.2em] text-[#C58C67]">
+                      {project.category}
+                    </p>
+
+                    <h3
+                      className="mt-3 text-3xl leading-tight text-[#10243a] transition-colors duration-300 group-hover:text-[#F5F2EA]"
+                      style={{ fontFamily: "var(--font-heading)" }}
+                    >
+                      {project.title}
+                    </h3>
+
+                    <p className="mt-4 text-sm leading-7 text-[#667586] transition-colors duration-300 group-hover:text-[#C8D3DE]">
+                      {project.description}
+                    </p>
+                  </div>
+
+                  <span className="mt-8 inline-block text-[10px] font-semibold uppercase tracking-[0.22em] text-[#10243a] transition-colors duration-300 group-hover:text-[#C58C67]">
+                    Explore Project
+                  </span>
+                </a>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <a
+                href="/projects"
+                className="inline-flex items-center border-b border-[#C58C67] pb-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#10243a] transition-colors hover:text-[#C58C67]"
+              >
+                View All Projects
+                <span className="ml-3">↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
-{/* CTA */}
+        {/* CTA */}
         <section className="bg-[#0b1622] text-[#F5F2EA]">
           <div className="site-container border-t border-white/10 py-24 sm:py-28 lg:py-32">
 
@@ -91,11 +194,11 @@ export default function ConstructionPage() {
                 Have a residential project in mind?
               </h2>
 
-            <div className="mt-6 flex w-full justify-center">
-              <p className="max-w-2xl text-center text-[16px] leading-7 text-[#C8D3DE] sm:text-[17px]">
-                Tell us about your project, your ideas and what you hope to create.
-              </p>
-            </div>
+              <div className="mt-6 flex w-full justify-center">
+                <p className="max-w-2xl text-center text-[16px] leading-7 text-[#C8D3DE] sm:text-[17px]">
+                  Tell us about your project, your ideas and what you hope to create.
+                </p>
+              </div>
 
               <a
                 href="/contact"

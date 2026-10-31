@@ -10,7 +10,7 @@ export default function AboutPreview() {
           The Story Behind Levell Up Builders
         </p>
 
-        <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-1">
 
           {/* LEFT */}
           <div>
@@ -29,28 +29,28 @@ export default function AboutPreview() {
           </div>
 
           {/* RIGHT */}
-          <div className="max-w-xl">
+          <div className="w-full max-w-none space-y-6 lg:-ml-6 xl:-ml-10">
 
-            <p className="text-[15px] leading-7 text-[#C8D3DE] sm:text-base sm:leading-8">
+            <p className="text-[17px] leading-[1.85] text-[#F5F2EA] sm:text-[19px] sm:leading-[1.8]">
               For our founder, construction was never just a profession—it
               was part of his world from the very beginning.
             </p>
 
-            <p className="mt-6 text-[15px] leading-7 text-[#C8D3DE] sm:text-base sm:leading-8">
+            <p className="text-[17px] leading-[1.85] text-[#F5F2EA] sm:text-[19px] sm:leading-[1.8]">
               Growing up with a father deeply involved in construction,
               he was introduced early to the realities of building and
               the countless decisions, skilled hands and commitment
               required to get things right.
             </p>
 
-            <p className="mt-6 text-[15px] leading-7 text-[#C8D3DE] sm:text-base sm:leading-8">
+            <p className="text-[17px] leading-[1.85] text-[#F5F2EA] sm:text-[19px] sm:leading-[1.8]">
               After pursuing Civil Engineering, he went on to build more
               than two decades of experience in interior design and
               execution, working with established names including Sleek
               and Johnson.
             </p>
 
-            <p className="mt-6 text-[15px] leading-7 text-[#C8D3DE] sm:text-base sm:leading-8">
+            <p className="text-[17px] leading-[1.85] text-[#F5F2EA] sm:text-[19px] sm:leading-[1.8]">
               Today, LEVELL UP BUILDERS brings together those roots in
               construction, engineering expertise and years of experience
               creating beautiful spaces.
@@ -58,7 +58,7 @@ export default function AboutPreview() {
 
             <Link
               href="/our-story"
-              className="mt-8 inline-block border-b border-[#C58C67] pb-1.5 text-[11px] font-medium uppercase tracking-[0.25em] text-[#F5F2EA] transition hover:text-[#C58C67]"
+              className="mt-3 inline-block border-b border-[#C58C67] pb-1.5 text-[12px] font-medium uppercase tracking-[0.25em] text-[#F5F2EA] transition hover:text-[#C58C67]"
             >
               Discover Our Story →
             </Link>

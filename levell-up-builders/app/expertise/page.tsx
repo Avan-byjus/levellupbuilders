@@ -4,27 +4,20 @@ import Footer from "@/components/Footer";
 const services = [
   {
     number: "01",
-    title: "Architecture",
-    description:
-      "Thoughtful planning, strong spatial concepts and architecture designed around the way people live and work.",
-    href: "/expertise/architecture",
-  },
-  {
-    number: "02",
     title: "Construction",
     description:
       "Disciplined execution, reliable coordination and uncompromising attention to quality from foundation to finish.",
     href: "/expertise/construction",
   },
   {
-    number: "03",
+    number: "02",
     title: "Interior Design",
     description:
       "Refined interiors balancing materiality, functionality and a timeless sense of character.",
     href: "/expertise/interior-design",
   },
   {
-    number: "04",
+    number: "03",
     title: "Turnkey Projects",
     description:
       "One integrated process taking your project from initial concept through execution and final delivery.",
@@ -108,24 +101,12 @@ export default function ExpertisePage() {
               </p>
             </div>
 
-            <div className="grid overflow-hidden md:grid-cols-2">
+          <div className="grid gap-5 lg:grid-cols-3">
               {services.map((service, index) => (
                 <a
                   key={service.number}
                   href={service.href}
-                  className={`group flex min-h-[360px] cursor-pointer flex-col justify-between bg-[#173754] p-8 text-[#F5F2EA] transition duration-500 hover:bg-[#1D4264] sm:p-10 lg:p-12 ${
-                    index === 0
-                      ? "border-b border-white/10 md:border-r"
-                      : ""
-                  } ${
-                    index === 1
-                      ? "border-b border-white/10"
-                      : ""
-                  } ${
-                    index === 2
-                      ? "border-b border-white/10 md:border-r md:border-b-0"
-                      : ""
-                  }`}
+                  className="group flex min-h-[360px] cursor-pointer flex-col justify-between bg-[#173754] p-8 text-[#F5F2EA] transition duration-500 hover:bg-[#1D4264] sm:p-10 lg:p-12"
                 >
                   <div className="flex items-start justify-between">
                     <span className="text-[11px] font-medium tracking-[0.25em] text-[#C58C67]">
@@ -139,12 +120,13 @@ export default function ExpertisePage() {
 
                   <div className="mt-20">
                     <h3
-                    className="text-[2.3rem] leading-none tracking-[-0.02em] text-[#F5F2EA] sm:text-[2.7rem]"
-                    style={{
-                      fontFamily: "var(--font-heading)",
-                    }}>
-                    {service.title}
-                  </h3>
+                      className="text-[2.3rem] leading-none tracking-[-0.02em] text-[#F5F2EA] sm:text-[2.7rem]"
+                      style={{
+                        fontFamily: "var(--font-heading)",
+                      }}
+                    >
+                      {service.title}
+                    </h3>
 
                     <p className="mt-5 max-w-lg text-[15px] leading-7 text-[#C8D3DE]">
                       {service.description}
@@ -223,11 +205,11 @@ export default function ExpertisePage() {
                 Have a residential project in mind?
               </h2>
 
-            <div className="mt-6 flex w-full justify-center">
-              <p className="max-w-2xl text-center text-[16px] leading-7 text-[#C8D3DE] sm:text-[17px]">
-                Tell us about your project, your ideas and what you hope to create.
-              </p>
-            </div>
+              <div className="mt-6 flex w-full justify-center">
+                <p className="max-w-2xl text-center text-[16px] leading-7 text-[#C8D3DE] sm:text-[17px]">
+                  Tell us about your project, your ideas and what you hope to create.
+                </p>
+              </div>
 
               <a
                 href="/contact"

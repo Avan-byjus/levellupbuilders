@@ -5,14 +5,14 @@ import "./globals.css";
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-heading",
+  variable: "--font-heading-loaded",
   display: "swap",
 });
 
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
+  variable: "--font-body-loaded",
   display: "swap",
 });
 

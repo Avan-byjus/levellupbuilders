@@ -16,15 +16,12 @@ export default function OurStoryPage() {
             </p>
 
             <h1 className="our-story-hero-title">
-              From design
-              <br />
-              to building.
+              Beyond the Blueprint
             </h1>
 
-            <p className="our-story-hero-copy">
-              A journey shaped by more than two decades of interior
-              design experience, now entering a new chapter in
-              residential construction.
+            <p className="our-story-hero-copy text-lg leading-9 sm:text-xl sm:leading-10 lg:text-3xl">
+              ​Bridging Generations, Elevating Spaces
+              ​Crafting Wholesome Spaces
             </p>
           </div>
         </div>
@@ -39,25 +36,24 @@ export default function OurStoryPage() {
             </p>
 
             <h2 className="story-title">
-              Built from
+              Building on a 
               <br />
-              experience.
+              Legacy of Excellence.
             </h2>
 
-            <p>
-              With more than 20 years of experience in interior design,
-              our founder has spent decades understanding how people
-              experience the spaces around them.
+           <p className="text-base leading-8 sm:text-lg sm:leading-9">
+              They say the apple doesn't fall far from the tree—and in the world of
+              construction, Peter Damin is proving to be a true chip off the old block
+              as he follows in his father's footsteps.
+          </p>
+
+            <p className="text-base leading-8 sm:text-lg sm:leading-9">
+              Raised with a front-row view of the industry,Peter Damin inherited a deep-seated 
+              respect for the craft, but turning that innate drive into unmatched expertise 
+              required forging a unique path.
             </p>
 
-            <p>
-              From materials and proportions to functionality and
-              everyday comfort, years of hands-on design work have
-              shaped an approach rooted in detail, practicality and
-              thoughtful execution.
-            </p>
-
-            <p>
+            <p className="text-base leading-8 sm:text-lg sm:leading-9">
               Levell Up Builders carries that experience into its next
               chapter, bringing a design-led perspective to residential
               building projects.
@@ -80,29 +76,27 @@ export default function OurStoryPage() {
             </p>
 
             <h2 className="story-title">
-              A new chapter
+              The Journey 
               <br />
-              in building.
+              & Expertise.
             </h2>
 
             <p>
-              The journey began with Kitchen Icon, an interior design
-              studio built around a passion for creating thoughtful
-              residential spaces.
+              ​Academic Foundation: Earned a degree in Civil Engineering, 
+              mastering the technical precision, structural integrity, 
+              and core mechanics required to build from the ground up.
             </p>
 
             <p>
-              After more than two decades of experience in interior
-              design, the business evolved into Levell Up Builders in
-              2024, marking the beginning of a new direction focused on
-              residential construction.
+              ​Refining the Craft: Transitioned into interior and landscape design, 
+              recognizing that a truly great structure seamlessly connects its 
+              external environment with its internal space.
             </p>
 
             <p>
-              In 2026, Levell Up Builders began its first construction
-              project — opening a new chapter for the company while
-              carrying forward the experience gained through years of
-              design.
+              ​Industry Rigor: Spent years gaining hands-on experience at premier, 
+              top-tier design firms, mastering high-end spatial aesthetics, 
+              project execution, and client management.
             </p>
 
             <p>
@@ -121,91 +115,30 @@ export default function OurStoryPage() {
       </section>
 
       {/* JOURNEY */}
-      <section className="story-journey section-light">
-        <div className="site-container">
-          <div className="journey-heading">
-            <p className="eyebrow text-[#C58C67]">
-              The Journey
-            </p>
+        <section className="story-block section-light">
+          <div className="site-container">
+            <div className="mx-auto flex w-full max-w-5xl flex-col items-center text-center">
+              <h2
+                className="w-full text-center text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                style={{ fontFamily: "var(--font-heading)" }}
+              >
+                The Complete Canvas
+              </h2>
 
-            <h2 className="story-title">
-              One chapter
-              <br />
-              at a time.
-            </h2>
-          </div>
-
-          <div className="journey-list">
-            <div className="journey-item">
-              <span>01</span>
-
-              <div>
-                <p className="journey-year">
-                  [YEAR]
-                </p>
-
-                <h3>Kitchen Icon</h3>
-
-                <p>
-                  The beginning of the journey as an interior design
-                  studio.
-                </p>
-              </div>
-            </div>
-
-            <div className="journey-item">
-              <span>02</span>
-
-              <div>
-                <p className="journey-year">
-                  20+ YEARS
-                </p>
-
-                <h3>Interior Design</h3>
-
-                <p>
-                  More than two decades of hands-on experience creating
-                  thoughtful residential interiors.
-                </p>
-              </div>
-            </div>
-
-            <div className="journey-item">
-              <span>03</span>
-
-              <div>
-                <p className="journey-year">
-                  2024
-                </p>
-
-                <h3>Levell Up Builders</h3>
-
-                <p>
-                  The business evolves into a new company focused on
-                  residential construction.
-                </p>
-              </div>
-            </div>
-
-            <div className="journey-item">
-              <span>04</span>
-
-              <div>
-                <p className="journey-year">
-                  2026
-                </p>
-
-                <h3>First Construction Project</h3>
-
-                <p>
-                  Levell Up Builders begins its first construction
-                  project.
-                </p>
-              </div>
+              <p className="mt-8 w-full max-w-3xl text-center text-base leading-8 text-gray-700 sm:text-lg sm:leading-9">
+                Driven by a desire to offer clients a seamless journey from blueprint
+                to final decor, Peter Damin first built a successful interior design
+                enterprise—a venture that served as the ultimate stepping stone.
+                Today, by uniting a solid foundation in civil engineering, high-end
+                interior aesthetics, landscape integration, and a rich legacy of
+                construction excellence, this venture delivers a truly wholesome,
+                end-to-end building experience.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+
 
       {/* CLOSING */}
       <section className="story-closing section-dark">
@@ -217,7 +150,7 @@ export default function OurStoryPage() {
           <h2 className="story-closing-title">
             The experience
             <br />
-            continues.
+            continues...
           </h2>
 
           <p className="story-closing-copy">

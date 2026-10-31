@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InteriorGallery from "./gallery-page";
 
 export default function InteriorDesignPage() {
   return (
@@ -22,7 +23,7 @@ export default function InteriorDesignPage() {
             Design
           </h1>
 
-          <p className="mt-8 max-w-2xl text-[17px] leading-8 text-[#C8D3DE]">
+          <p className="!mt-10 max-w-2xl text-[17px] leading-10 text-[#C8D3DE]">
             More than two decades of interior design experience
             continue to shape the way we think about residential
             spaces.
@@ -71,7 +72,8 @@ export default function InteriorDesignPage() {
             </div>
           </div>
         </section>
-
+      <InteriorGallery />
+      
         {/* APPROACH */}
         <section className="bg-[#10243a]">
           <div className="site-container py-24 sm:py-28 lg:py-32">

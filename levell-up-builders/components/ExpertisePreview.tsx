@@ -1,27 +1,20 @@
 const services = [
   {
     number: "01",
-    title: "Architecture",
-    description:
-      "Thoughtful planning, strong spatial concepts and architecture designed around the way people live and work.",
-    href: "/expertise/architecture",
-  },
-  {
-    number: "02",
     title: "Construction",
     description:
       "Disciplined execution, reliable coordination and uncompromising attention to quality from foundation to finish.",
     href: "/expertise/construction",
   },
   {
-    number: "03",
+    number: "02",
     title: "Interior Design",
     description:
       "Refined interiors balancing materiality, functionality and a timeless sense of character.",
     href: "/expertise/interior-design",
   },
   {
-    number: "04",
+    number: "03",
     title: "Turnkey Projects",
     description:
       "One integrated process taking your project from initial concept through execution and final delivery.",
@@ -51,25 +44,12 @@ export default function ExpertisePreview() {
         </div>
 
         {/* EXPERTISE BOXES */}
-        <div className="grid overflow-hidden md:grid-cols-2">
-
+        <div className="grid gap-5 lg:grid-cols-3">
           {services.map((service, index) => (
             <a
               key={service.number}
               href={service.href}
-              className={`
-                group block min-h-[320px]
-                bg-[#173754] p-8
-                text-[#F5F2EA]
-                no-underline
-                transition duration-500
-                hover:bg-[#1D4264]
-                sm:p-10
-                lg:p-12
-                ${index === 0 ? "md:border-r md:border-b md:border-white/10" : ""}
-                ${index === 1 ? "md:border-b md:border-white/10" : ""}
-                ${index === 2 ? "md:border-r md:border-white/10" : ""}
-              `}
+              className="group flex min-h-[360px] cursor-pointer flex-col justify-between bg-[#173754] p-8 text-[#F5F2EA] transition duration-500 hover:bg-[#1D4264] sm:p-10 lg:p-12"
             >
 
               {/* TOP ROW */}

@@ -20,8 +20,8 @@
 
   --accent: #c58c67;
 
-  --font-heading: "Cormorant Garamond", serif;
-  --font-body: "Manrope", sans-serif;
+  --font-heading: var(--font-heading-loaded), "Cormorant Garamond", serif;
+  --font-body: var(--font-body-loaded), "Manrope", sans-serif;
 }
 
 /* =========================================================
@@ -825,19 +825,19 @@ img {
 }
 
 .expertise-hero-title {
-  margin-top: 24px;
+  margin-top: 32px;
   font-family: var(--font-heading);
   font-size: clamp(56px, 7vw, 92px);
   font-weight: 500;
-  line-height: 0.95;
+  line-height: 1.04;
   letter-spacing: -0.035em;
 }
 
 .expertise-hero-copy {
   max-width: 560px;
-  margin-top: 32px;
+  margin-top: 42px;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: var(--muted-light);
 }
 
@@ -1127,19 +1127,19 @@ img {
 }
 
 .projects-hero-title {
-  margin-top: 24px;
+  margin-top: 32px;
   font-family: var(--font-heading);
   font-size: clamp(58px, 8vw, 108px);
   font-weight: 500;
-  line-height: 0.92;
+  line-height: 1.02;
   letter-spacing: -0.04em;
 }
 
 .projects-hero-copy {
   max-width: 620px;
-  margin-top: 36px;
+  margin-top: 44px;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: var(--muted-light);
 }
 
@@ -1938,4 +1938,137 @@ img {
   .contact-closing-title {
     font-size: clamp(48px, 13vw, 62px);
   }
+}
+
+@media (max-width: 639px) {
+  .expertise-hero-title,
+  .projects-hero-title {
+    line-height: 1.06;
+  }
+
+  .expertise-hero-copy,
+  .projects-hero-copy {
+    margin-top: 30px;
+    line-height: 1.8;
+  }
+}
+
+/* =========================================================
+   DESIGN REFINEMENT — FIRST PASS
+   Keeps the existing colours, fonts and page structure
+========================================================= */
+
+/* Consistent hero heading and subtitle spacing */
+.expertise-hero-title,
+.projects-hero-title {
+  margin-top: 24px;
+  line-height: 0.98;
+}
+
+.expertise-hero-copy,
+.projects-hero-copy {
+  margin-top: 28px;
+  line-height: 1.8;
+}
+
+/* Keep hero text readable without making lines too long */
+.expertise-hero-copy {
+  max-width: 600px;
+}
+
+.projects-hero-copy {
+  max-width: 620px;
+}
+
+/* Make section headings consistent */
+.expertise-section-title,
+.projects-intro-title,
+.projects-section-title {
+  line-height: 1.02;
+}
+
+/* Remove the fixed CTA font sizes that override responsive sizing */
+.cta-title {
+  font-size: clamp(44px, 5.2vw, 72px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.03em !important;
+}
+
+@media (max-width: 1023px) {
+  .cta-title {
+    font-size: clamp(42px, 6vw, 60px) !important;
+  }
+}
+
+/* Scope contact descriptions so the form page and CTA
+   don't accidentally inherit the same styling */
+.contact-inquiry .contact-description {
+  max-width: 420px;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
+.contact-section .contact-description {
+  max-width: 760px;
+  margin: 32px auto 42px;
+}
+
+/* Improve mobile hero rhythm */
+@media (max-width: 639px) {
+  .expertise-hero,
+  .projects-hero {
+    padding-block: 88px 92px;
+  }
+
+  .expertise-hero-title,
+  .projects-hero-title {
+    margin-top: 20px;
+    line-height: 1.04;
+  }
+
+  .expertise-hero-copy,
+  .projects-hero-copy {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .cta-title {
+    font-size: clamp(40px, 11vw, 52px) !important;
+    line-height: 1.04 !important;
+  }
+}
+/* TEMPORARY FONT TEST */
+body {
+  font-family: var(--font-body-loaded), sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading-loaded), serif !important;
+}
+
+/* Typography refinement — secondary headings */
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+/* Keep body text comfortable and refined */
+p {
+  line-height: 1.7;
 }
