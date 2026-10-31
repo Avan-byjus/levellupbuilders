@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { galleryMedia } from "@/lib/generated-gallery";
 
-export default function PeramburSitePage() {
+export default function PerumbakamSitePage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const constructionGallery = galleryMedia.filter(
@@ -33,13 +33,13 @@ export default function PeramburSitePage() {
             className="mt-8 text-[4rem] leading-[0.95] tracking-[-0.035em] sm:text-[5rem] lg:text-[7rem]"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Perambur
+            Perumbakam
             <br />
             Site
           </h1>
 
           <p className="!mt-10 max-w-2xl text-[17px] leading-9 text-[#C8D3DE]">
-            A closer look at our work at the Perambur site.
+            A closer look at our work at the Perumbakam site.
           </p>
         </section>
 
@@ -74,12 +74,12 @@ export default function PeramburSitePage() {
                       <button
                         type="button"
                         onClick={() => setSelectedImage(item.src)}
-                        aria-label={`Enlarge Perambur Site photograph ${index + 1}`}
+                        aria-label={`Enlarge Perumbakam Site photograph ${index + 1}`}
                         className="block aspect-[4/3] w-full cursor-zoom-in overflow-hidden"
                       >
                         <Image
                           src={item.src}
-                          alt={`Perambur Site photograph ${index + 1}`}
+                          alt={`Perumbakam Site photograph ${index + 1}`}
                           width={1200}
                           height={900}
                           unoptimized
@@ -110,13 +110,13 @@ export default function PeramburSitePage() {
                 className="mt-6 max-w-xl text-4xl leading-tight sm:text-5xl"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
-                Perambur Site
+                Perumbakam Site
               </h2>
             </div>
 
             <div className="max-w-2xl text-[16px] leading-8 text-[#C8D3DE]">
               <p>
-                Explore the work and progress at our Perambur site.
+                Explore the work and progress at our Perumbakam site.
                 More project details and photographs will be added
                 as the collection develops.
               </p>
@@ -146,7 +146,7 @@ export default function PeramburSitePage() {
           >
             <Image
               src={selectedImage}
-              alt="Enlarged Perambur Site photograph"
+              alt="Enlarged Perumbakam Site photograph"
               width={1800}
               height={1400}
               unoptimized

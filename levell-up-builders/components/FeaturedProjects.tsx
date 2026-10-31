@@ -8,10 +8,10 @@ const projects = [
   {
     number: "01",
     category: "Residential",
-    title: "Perambur Site",
+    title: "Perumbakam Site",
     description:
       "A refined residential environment shaped around proportion, material and natural light.",
-    href: "/projects/perambur-site",
+    href: "/projects/perumbakam-site",
   },
   {
     number: "02",

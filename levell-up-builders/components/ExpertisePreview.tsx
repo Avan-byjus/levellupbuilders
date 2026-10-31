@@ -1,23 +1,23 @@
 const services = [
   {
     number: "01",
-    title: "Construction",
+    title: "Design-Led Building",
     description:
-      "Disciplined execution, reliable coordination and uncompromising attention to quality from foundation to finish.",
+      "Where Vision Meets Structural Excellence. Great spaces aren’t born from blueprints alone—they start with a clear, cohesive vision. We unify design imagination with engineering precision from day one, ensuring every elevation, layout, and detail is thoughtfully crafted for both timeless aesthetics and functional elegance.",
     href: "/expertise/construction",
   },
   {
     number: "02",
-    title: "Interior Design",
+    title: "Bespoke Interior Environments",
     description:
-      "Refined interiors balancing materiality, functionality and a timeless sense of character.",
+      "Tailored Spaces Crafted for Living. Interior design is the art of spatial flow, texture, and light. We curate custom layouts, refined material palettes, and lighting concepts that seamlessly transform structural builds into warm, sophisticated, and deeply personal living environments.",
     href: "/expertise/interior-design",
   },
   {
     number: "03",
-    title: "Turnkey Projects",
+    title: "Turnkey Execution & Delivery",
     description:
-      "One integrated process taking your project from initial concept through execution and final delivery.",
+      "​From Concept to Key—Single-Point Accountability. We take complete ownership of your project’s entire lifecycle, eliminating multi-vendor friction, timeline uncertainty, and budget variance. You receive total transparency, effortless management, and a finished space ready for you to step into",
     href: "/expertise/turnkey-projects",
   },
 ];

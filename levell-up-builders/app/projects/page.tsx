@@ -11,10 +11,10 @@ const projects = [
   {
     number: "01",
     category: "Residential",
-    title: "Perambur Site",
+    title: "Perumbakam Site",
     description:
       "A residential project shaped around considered proportions, materiality and everyday living.",
-    href: "/projects/perambur-site",
+    href: "/projects/perumbakam-site",
     mediaCategory: "interiors",
   },
   {
@@ -119,8 +119,8 @@ export default function ProjectsPage() {
   decodeURIComponent(item.src).toLowerCase().includes("project 1 img")
 );
 
-// Only the Perambur Site row uses a thumbnail.
-const peramburSiteImage = constructionImages.find((item) =>
+// Only the Perumbakam Site row uses a thumbnail.
+const perumbakamSiteImage = constructionImages.find((item) =>
   decodeURIComponent(item.src).toLowerCase().includes("project 1 img")
 );
 
@@ -214,7 +214,7 @@ const peramburSiteImage = constructionImages.find((item) =>
             </p>
 
             <Link
-              href="/projects/perambur-site"
+              href="/projects/perumbakam-site"
               className="mt-8 inline-flex border-b border-[#C58C67] pb-2 text-sm text-[#F5F2EA] transition hover:text-[#C58C67]"
             >
               Explore featured project
@@ -245,7 +245,7 @@ const peramburSiteImage = constructionImages.find((item) =>
 
           <div className="border-t border-[#D9D4C9]">
             {projects.map((project, index) => {
-              const media = index === 0 ? peramburSiteImage : undefined;
+              const media = index === 0 ? perumbakamSiteImage : undefined;
 
               return (
                 <Link
@@ -376,7 +376,7 @@ const peramburSiteImage = constructionImages.find((item) =>
           </p>
 
           <Link
-            href="/projects/perambur-site"
+            href="/projects/perumbakam-site"
             className="group block max-w-3xl overflow-hidden border border-white/15 bg-[#122B41] transition-colors hover:border-[#C58C67]"
           >
             <div className="grid sm:grid-cols-[1.2fr_1fr]">

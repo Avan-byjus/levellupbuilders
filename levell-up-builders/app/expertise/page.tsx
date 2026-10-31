@@ -4,23 +4,23 @@ import Footer from "@/components/Footer";
 const services = [
   {
     number: "01",
-    title: "Construction",
+    title: "Design-Led Building",
     description:
-      "Disciplined execution, reliable coordination and uncompromising attention to quality from foundation to finish.",
+      "Where Vision Meets Structural Excellence. Great spaces aren’t born from blueprints alone—they start with a clear, cohesive vision. We unify design imagination with engineering precision from day one, ensuring every elevation, layout, and detail is thoughtfully crafted for both timeless aesthetics and functional elegance.",
     href: "/expertise/construction",
   },
   {
     number: "02",
-    title: "Interior Design",
+    title: "Bespoke Interior Environments",
     description:
-      "Refined interiors balancing materiality, functionality and a timeless sense of character.",
+      "Tailored Spaces Crafted for Living. Interior design is the art of spatial flow, texture, and light. We curate custom layouts, refined material palettes, and lighting concepts that seamlessly transform structural builds into warm, sophisticated, and deeply personal living environments.",
     href: "/expertise/interior-design",
   },
   {
     number: "03",
-    title: "Turnkey Projects",
+    title: "Turnkey Execution & Delivery",
     description:
-      "One integrated process taking your project from initial concept through execution and final delivery.",
+      "​From Concept to Key—Single-Point Accountability. We take complete ownership of your project’s entire lifecycle, eliminating multi-vendor friction, timeline uncertainty, and budget variance. You receive total transparency, effortless management, and a finished space ready for you to step into",
     href: "/expertise/turnkey-projects",
   },
 ];
@@ -42,12 +42,12 @@ export default function ExpertisePage() {
               className="mt-7 max-w-4xl text-[4rem] leading-[0.94] tracking-[-0.035em] sm:text-[5rem] lg:text-[6rem]"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              What we build.
+              ​One Vision. Complete Execution.
             </h1>
 
             <p className="mt-8 max-w-2xl text-[16px] leading-7 text-[#C8D3DE] sm:text-[17px]">
-              Residential spaces shaped by design experience,
-              thoughtful planning and a commitment to quality.
+              ​A unified approach to design-led construction, 
+              engineering, and luxury interiors.
             </p>
           </div>
         </section>
@@ -71,21 +71,22 @@ export default function ExpertisePage() {
 
               <div className="max-w-2xl text-[16px] leading-8 text-[#667586] sm:text-[17px]">
                 <p>
-                  Levell Up Builders brings more than two decades of
-                  interior design experience into residential
-                  construction.
+                  ​At LevellUp Builders, expertise is not just about 
+                  executing individual trades—it is the seamless 
+                  integration of vision, engineering, and craftsmanship.
+
                 </p>
 
                 <p className="mt-6">
-                  Our approach begins with understanding how a space
-                  should look, feel and function before turning those
-                  ideas into a finished building.
+                  From initial concept to final handover, 
+                  we bring design-led thinking, uncompromising structural integrity, 
+                  custom interior curation, and complete turnkey management 
+                  under single-point leadership. 
                 </p>
 
                 <p className="mt-6">
-                  That design background allows us to approach
-                  residential projects with particular attention to
-                  proportion, materials, functionality and detail.
+                  The result is a frictionless building journey 
+                  and a space built to endure.
                 </p>
               </div>
             </div>
@@ -155,30 +156,15 @@ export default function ExpertisePage() {
                   className="mt-6 max-w-xl text-[3.2rem] leading-[0.98] sm:text-[4rem] lg:text-[4.5rem]"
                   style={{ fontFamily: "var(--font-heading)" }}
                 >
-                  Experience
-                  <br />
-                  behind every detail.
+                  ​The Integrated Advantage:
                 </h2>
               </div>
 
               <div className="max-w-2xl text-[16px] leading-8 text-[#C8D3DE] sm:text-[17px]">
                 <p>
-                  Before Levell Up Builders entered construction,
-                  our founder spent more than 20 years working in
-                  interior design.
-                </p>
-
-                <p className="mt-6">
-                  That experience continues to influence the way we
-                  think about residential spaces today — from
-                  materials and proportions to functionality and
-                  everyday comfort.
-                </p>
-
-                <p className="mt-6">
-                  Levell Up Builders represents the next chapter:
-                  taking that experience beyond interiors and into
-                  the construction of complete residential spaces.
+                  Because design, construction, and interiors happen under 
+                  single-point leadership, your vision remains completely 
+                  uncompromised from foundation to handover.
                 </p>
               </div>
             </div>

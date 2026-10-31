@@ -50,7 +50,7 @@ export default function Footer() {
             </h2>
 
             <p className="mt-7 max-w-[500px] text-sm leading-7 text-[#B8C5D0]">
-              Architecture, construction and interior design solutions
+              Construction and interior design solutions
               tailored to create spaces that inspire today and endure
               tomorrow.
             </p>
