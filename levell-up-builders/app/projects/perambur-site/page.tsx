@@ -9,14 +9,14 @@ import { galleryMedia } from "@/lib/generated-gallery";
 export default function PeramburSitePage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const constructionGallery = galleryMedia.filter(
-    (item) =>
-      item.category === "construction" &&
-      item.collection === "first-project" &&
-      !decodeURIComponent(item.src)
-        .toLowerCase()
-        .includes("project 1 img")
-  );
+    const constructionGallery = galleryMedia.filter(
+  (item) =>
+    item.category === "construction" &&
+    item.collection === "first-project" &&
+    !decodeURIComponent(item.src)
+      .toLowerCase()
+      .includes("project 1 img")
+);
 
   return (
     <>

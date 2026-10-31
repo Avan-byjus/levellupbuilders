@@ -43,12 +43,15 @@ export default function FeaturedProjects() {
     )
     .slice(0, 3);
 
-  const constructionImages = galleryMedia
+    const constructionImages = galleryMedia
     .filter(
       (item) =>
         item.category === "construction" &&
         item.collection === "first-project" &&
-        item.type === "image"
+        item.type === "image" &&
+        !decodeURIComponent(item.src)
+          .toLowerCase()
+          .includes("project 1 img")
     )
     .slice(0, 2);
 

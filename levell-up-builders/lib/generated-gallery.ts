@@ -281,14 +281,14 @@ export const galleryMedia = [
     "title": "Construction Site"
   },
   {
-    "src": "/images/construction/first-project/imgs/WhatsApp%20Image%202026-10-26%20at%2020.59.23.jpeg",
+    "src": "/images/construction/first-project/imgs/WhatsApp%20Image%202026-10-24%20at%2023.48.24.jpeg",
     "type": "image",
     "collection": "first-project",
     "category": "construction",
     "title": "Construction Site"
   },
   {
-    "src": "/images/construction/first-project/imgs/WhatsApp%20Image%202026-10-26%20at%2020.59.24.jpeg",
+    "src": "/images/construction/first-project/imgs/WhatsApp%20Image%202026-10-26%20at%2020.59.23.jpeg",
     "type": "image",
     "collection": "first-project",
     "category": "construction",
